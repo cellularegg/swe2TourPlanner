@@ -1,0 +1,30 @@
+﻿<Window x:Class="swe2_tour_planner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:swe2_tour_planner"
+        mc:Ignorable="d"
+        Title="swe2 ue1 mvvm" Height="400" Width="400">
+    <Window.DataContext>
+        <local:MainViewModel />
+    </Window.DataContext>
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Margin="5" VerticalAlignment="Center">Enter text here:</Label>
+            <TextBox Grid.Column="1" Margin="5" Height="20" Text="{Binding Input, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center"></TextBox>
+            <Button Grid.Column="2" Margin="5" Command="{Binding DisplayTextCommand}"  VerticalAlignment="Center" Height="25" Width="60">Display</Button>
+        </Grid>
+        <Label Grid.Row="1" HorizontalAlignment="Center" Content="{Binding Output}" VerticalAlignment="Center" FontSize="36"></Label>
+    </Grid>
+</Window>
