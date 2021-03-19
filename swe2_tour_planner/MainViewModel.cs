@@ -27,7 +27,7 @@ namespace swe2_tour_planner
 
                     // This triggers the UI and the Execute Command
                     Debug.WriteLine($"Fire propertyChanged: {nameof(Input)}");
-                    OnPropertyChanged(nameof(Input));
+                    OnPropertyChanged();
                 }
             }
         }

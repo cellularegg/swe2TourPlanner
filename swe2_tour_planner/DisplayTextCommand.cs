@@ -22,7 +22,6 @@ namespace swe2_tour_planner
             };
         }
 
-
         public bool CanExecute(object? parameter)
         {
             Debug.WriteLine("Command: can execute.");
@@ -33,7 +32,7 @@ namespace swe2_tour_planner
         {
             Debug.WriteLine("Command execute");
             _mainViewModel.Output = $"Text entered: \"{_mainViewModel.Input}\"";
-            // _mainViewModel.Input = string.Empty;
+            _mainViewModel.Input = string.Empty;
             Debug.WriteLine("Command: execute done");
         }
 
