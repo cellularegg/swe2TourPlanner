@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
 
-namespace swe2_tour_planner
+namespace swe2TourPlanner
 {
     public class MainViewModel : INotifyPropertyChanged
     {
