@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "swe2TourPlanner.DAL", "swe2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "TestConsole\TestConsole.csproj", "{EF98357D-2014-40F1-865D-C6E565F02FCE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "swe2TourPlanner.BL", "swe2TourPlanner.BL\swe2TourPlanner.BL.csproj", "{1196563F-93EF-4774-8BFE-160C4B8CFEED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{EF98357D-2014-40F1-865D-C6E565F02FCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF98357D-2014-40F1-865D-C6E565F02FCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF98357D-2014-40F1-865D-C6E565F02FCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1196563F-93EF-4774-8BFE-160C4B8CFEED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1196563F-93EF-4774-8BFE-160C4B8CFEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1196563F-93EF-4774-8BFE-160C4B8CFEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1196563F-93EF-4774-8BFE-160C4B8CFEED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
