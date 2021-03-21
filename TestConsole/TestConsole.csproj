@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+        <RootNamespace>test_console</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\swe2TourPlanner.BL\swe2TourPlanner.BL.csproj" />
+      <ProjectReference Include="..\swe2TourPlanner.DAL\swe2TourPlanner.DAL.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -3,6 +3,9 @@
 
 ## ToDo
 * DAL überlegen bis zum nächsten Mal für Feedback
+* async?
+
+
 
 ## Notes
 * https://www.youtube.com/watch?v=N26C_Cq-gAY&t=454s
