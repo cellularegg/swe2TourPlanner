@@ -3,13 +3,68 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
         xmlns:local="clr-namespace:swe2TourPlanner"
         mc:Ignorable="d"
-        Title="swe2 ue1 mvvm" Height="400" Width="400">
+        Title="swe2 ue1 mvvm" Height="405" Width="720">
     <Window.DataContext>
         <local:MainViewModel />
     </Window.DataContext>
-    <Grid ShowGridLines="False" Margin="10">
+    <Grid ShowGridLines="False">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.25*" MinWidth="30"/>
+            <ColumnDefinition Width="0.25*" MinWidth="30"/>
+            <ColumnDefinition Width="0.25*" MinWidth="30"/>
+            <ColumnDefinition Width="0.25*" MinWidth="30"/>
+            <ColumnDefinition Width="Auto" MinWidth="25"/>
+            <ColumnDefinition Width="1*" MinWidth="25"/>
+            <ColumnDefinition Width="1*" MinWidth="25"/>
+            <ColumnDefinition Width="1*" MinWidth="25"/>
+            <ColumnDefinition Width="Auto" MinWidth="25"/>
+        </Grid.ColumnDefinitions>
+        <DockPanel Width="Auto" Grid.Row="0" Grid.ColumnSpan="9">
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <MenuItem Header="_Export" />
+                    <MenuItem Header="_Import" />
+                    <MenuItem Header="_Exit" />
+                </MenuItem>
+                <MenuItem Header="_Edit"/>
+                <MenuItem Header="_Options"/>
+                <MenuItem Header="_Help"/>
+            </Menu>
+        </DockPanel>
+        <TextBox Grid.Row="1" Grid.ColumnSpan="9" Width="Auto" Margin="5,2,5,0">Search</TextBox>
+        <Button Grid.Row="1" Grid.Column="9" Width="Auto" HorizontalAlignment="Right" Margin="5, 2, 5, 0" Padding="3" fa:Awesome.Content="Search" ></Button>
+        <Separator Grid.Row="2" Grid.ColumnSpan="9" VerticalAlignment="Top" Height="Auto" ></Separator>
+        <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Width="Auto" Height="Auto" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,2,5,2">Tours</Label>
+        <Button Grid.Row="2" Grid.Column="2" Height="Auto" VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Padding="3" fa:Awesome.Content="Plus" Margin="5,7,5,2"></Button>
+        <Button Grid.Row="2" Grid.Column="3" Height="Auto" VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Padding="3" fa:Awesome.Content="Minus" Margin="5,7,5,2"></Button>
+        <ListView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="5" Margin="5,5,5,5"></ListView>
+        <Label Grid.Row="2" Grid.Column="4" Width="Auto" HorizontalAlignment="Left">Name:</Label>
+        <TextBox Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="3" VerticalAlignment="Center" Margin="5,2,5,2" Text="TestName"/>
+        <Button Grid.Row="2" Grid.Column="9" Margin="5,5,5,5">Update</Button>
+        <Label Grid.Row="4" Grid.Column="4" Width="Auto" HorizontalAlignment="Left">Distance In Km:</Label>
+        <TextBox Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="3" VerticalAlignment="Center" Margin="5,2,5,2" TextWrapping="Wrap" AcceptsReturn="True" Text="TestDecription"/>
+        <TextBox Grid.Row="4" Grid.Column="5" Grid.ColumnSpan="3" VerticalAlignment="Center" Margin="5,2,5,2" Text="10"/>
+        <Label Grid.Row="3" Grid.Column="4" Width="Auto" HorizontalAlignment="Left">Desciption:</Label>
+        <GridSplitter  Grid.Row="6" Grid.Column="4" Grid.ColumnSpan="5" HorizontalAlignment="Stretch"></GridSplitter>
+        <Image Grid.Row ="5" Grid.Column="4" Grid.ColumnSpan="5" Margin="5,5,5,5" VerticalAlignment="Center" HorizontalAlignment="Center"
+               Source="C:\Users\zeleodav\MegaSync\fh_subjects\swe2\placeholder.png" Stretch="Uniform"/>
+        <DataGrid Grid.Row="7" Grid.Column="4" Grid.ColumnSpan="5" Margin="5,5,5,5"></DataGrid>
+    </Grid>
+
+    <!--     <Grid ShowGridLines="False" Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="1*" />
@@ -32,4 +87,6 @@
         <Label Grid.Row="1" HorizontalAlignment="Center" Content="{Binding Output}" VerticalAlignment="Center"
                FontSize="36" />
     </Grid>
+-->
+
 </Window>
